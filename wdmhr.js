@@ -32,7 +32,10 @@ function rollAHero() {
       for (j=0; j<4; j++) {
         d6s [j] = rando(6);
       } 
-    stat = sortRolls(d6s);
-    document.write(d6s," ",stat," ");
+    stats[i] = sortRolls(d6s);
+    document.write(d6s," ",stats[i]," ");
+    //roll = document.getElementById("roll"+i);
+    //roll.innerHTML = stats[i];
   }
+
 }
